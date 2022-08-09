@@ -1,0 +1,164 @@
+/* USABLE FONTS:
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif;*/
+
+body {
+  margin: 0px;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.5em;
+  color: #40514E;
+  background-color: #556EEA;
+}
+
+iframe {
+  margin: 0% auto 5%;
+	width: 50%
+}
+
+p {
+  margin-top: 0px;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+/*Headings*/
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 4.4rem;
+  color: #66BFBF;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0px auto;
+  color: #66BFBF;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: #11999E;
+}
+
+hr {
+  width: 10%;
+  border: solid #EAF6F6 5px;
+  border-bottom: none;
+  margin: 100px auto;
+}
+
+/*Classes*/
+/*Divs*/
+.top_container {
+  position: relative;
+  padding: 60px 0px;
+  background-image: -webkit-linear-gradient(top, #556EEA, #6774B5);
+}
+
+.middle_container {
+  background-color: white;
+}
+
+.bottom_container {
+  position: relative;
+  padding-top: 20px;
+  background-image: -webkit-linear-gradient(top, #6774B5, #556EEA);
+  text-align: center;
+}
+
+.skill-row {
+  width: 60%;
+  margin: 120px auto;
+  text-align: center;
+}
+
+/*Texts*/
+.intro {
+  width: 50%;
+  margin: 25px auto;
+}
+
+.heading-text {
+  color: white;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+/*IMAGE CLASSES*/
+.pfp {
+  margin: 6% auto 2%;
+  height: 200px;
+  width: 200px;
+}
+
+.board-img{
+  width: 9em;
+  margin: auto 5% 10% auto;
+  float: left;
+}
+
+.mid-image {
+  margin: 0px 40px 5%;
+  float: right;
+}
+
+.cloudTop {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+  opacity: 50%;
+}
+
+.cloudBottom {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+  opacity: 50%;
+}
+
+/*Button*/
+.btn {
+   background-image: -webkit-linear-gradient(top, #556EEA, #6774B5);
+   color: #FFFFFF;
+   font-family: Trebuchet MS;
+   border-radius: 35px;
+   font-size: 25px;
+   padding: 10px 25px;
+   margin: 1rem auto 4rem;
+   font-weight: 600;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   background-image: -webkit-linear-gradient(top, #6774B5, #556EEA);
+   text-decoration: none;
+}
+
+.link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 10px 2rem;
+}
+
+.link:hover {
+  opacity: 50%;
+}
+
+.copyright {
+  margin-bottom: 0px;
+  padding: 20px 20px 10px;
+  font-size: 1rem;
+}
