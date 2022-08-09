@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7434433037510130275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7434433037510130301}
+  - component: {fileID: 7434433037510130300}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &7434433037510130301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7434433037510130275}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.33867556, y: -1.599888, z: -0.014208897}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7434433037510130300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7434433037510130275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be4a3b9ee2e646e280da4c7343a2e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barier: {fileID: 0}
+  mainCamera: {fileID: 0}
+  highScoreLine: {fileID: 0}
+  score: {fileID: 0}
+  gameOverScore: {fileID: 0}
+  gg: {fileID: 0}
+  platformCount: 20
+  platformSprites:
+  - {fileID: 4618481328588866957, guid: 6689590c3f227408398c866913807f16, type: 3}
+  - {fileID: 4618481328588866957, guid: 6689590c3f227408398c866913807f16, type: 3}
+  - {fileID: 4618481328588866957, guid: 6689590c3f227408398c866913807f16, type: 3}
+  - {fileID: 4618481328588866957, guid: 6689590c3f227408398c866913807f16, type: 3}
+  - {fileID: 577400193168718012, guid: ff6fb8ee015e84a60a1fd782a6446148, type: 3}
+  - {fileID: 577400193168718012, guid: ff6fb8ee015e84a60a1fd782a6446148, type: 3}
+  - {fileID: 4618481328588866957, guid: 0b337743eea52486bace71a340382251, type: 3}
+  - {fileID: 7074221346227277591, guid: af5a40476c6de450186110982fdc532f, type: 3}
+  - {fileID: 7074221346227277591, guid: 4216cd78615db4ee19ed0a8a6ef25679, type: 3}
+  - {fileID: 2375054023093912818, guid: b30ef05fc83524adcb7cf567f454ee5b, type: 3}
+  platformRangeHorizontal: {x: -2, y: 2}
+  platformRangeVertical: {x: 1, y: 2}
+  spawnPosition: {x: 0, y: 0, z: 0}
+  playerDied: 0
+  smashing: 0
+  canSmash: 0
+  canvas: {fileID: 0}
+  gameScore: {fileID: 0}
+  pauseCanvas: {fileID: 0}
+  randomSprite: 0
+  previusRandom: 0

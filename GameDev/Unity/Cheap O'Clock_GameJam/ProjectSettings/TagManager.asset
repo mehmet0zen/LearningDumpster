@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - start
+  - finish
+  - forceleft
+  - forceright
+  - forcetop
+  - forcebottom
+  - BorderSpikes
+  - spike
+  - slime
+  - normal
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - ground
+  - Water
+  - UI
+  - finish
+  - spike
+  - borderSpike
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BG
+    uniqueID: 2626851145
+    locked: 0
+  - name: UI
+    uniqueID: 4288281411
+    locked: 0
+  - name: PlayerFace
+    uniqueID: 1887593435
+    locked: 0
+  - name: PlayerBody
+    uniqueID: 1979477233
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
