@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CryptoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5FC-ts-fYN">
+                                <rect key="frame" x="0.0" y="198" width="414" height="500"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="pNk-Yk-k50">
+                                        <rect key="frame" x="26" y="171" width="362" height="158"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="UkD-7n-iKd">
+                                                <rect key="frame" x="0.0" y="0.0" width="362" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From: " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sff-Ft-ATl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="15"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                    </label>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9wP-UP-dLq" userLabel="CryptoCurrency">
+                                                        <rect key="frame" x="83" y="0.0" width="279" height="32"/>
+                                                        <segments>
+                                                            <segment title="BTC"/>
+                                                            <segment title="ETH"/>
+                                                            <segment title="XLM"/>
+                                                            <segment title="DOGE"/>
+                                                            <segment title="LTC"/>
+                                                        </segments>
+                                                    </segmentedControl>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LwV-4y-EcH">
+                                                <rect key="frame" x="0.0" y="59" width="362" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBe-TU-6Tz" userLabel="Switch Button">
+                                                        <rect key="frame" x="0.0" y="0.0" width="23.5" height="40"/>
+                                                        <color key="tintColor" name="bgColor"/>
+                                                        <state key="normal" image="arrow.up.arrow.down" catalog="system">
+                                                            <color key="titleColor" name="bgColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter..." textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fad-uV-8t1" userLabel="Number Input">
+                                                        <rect key="frame" x="35.5" y="0.0" width="260" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="WQV-kd-zRQ"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="giI-Si-NhJ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78K-Oe-mB5" userLabel="GO Button">
+                                                        <rect key="frame" x="307.5" y="0.0" width="54.5" height="40"/>
+                                                        <color key="backgroundColor" name="bgColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="I3H-dV-Qe6"/>
+                                                        </constraints>
+                                                        <state key="normal" title="GO">
+                                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="Xuf-Ae-vsD" kind="presentation" id="mM4-hf-q9X"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="tiT-tj-TPb">
+                                                <rect key="frame" x="0.0" y="127" width="362" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To:      " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ase-5f-A0y">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="31"/>
+                                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="15"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                    </label>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TNf-kI-CQV" userLabel="Money Currency">
+                                                        <rect key="frame" x="80.5" y="0.0" width="281.5" height="32"/>
+                                                        <segments>
+                                                            <segment title="USD"/>
+                                                            <segment title="EUR"/>
+                                                            <segment title="GBP"/>
+                                                            <segment title="JPY"/>
+                                                            <segment title="TL"/>
+                                                        </segments>
+                                                    </segmentedControl>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="pNk-Yk-k50" firstAttribute="centerY" secondItem="5FC-ts-fYN" secondAttribute="centerY" id="2b2-0P-qYN"/>
+                                    <constraint firstAttribute="height" constant="500" id="iEB-bS-O1c"/>
+                                    <constraint firstItem="pNk-Yk-k50" firstAttribute="centerX" secondItem="5FC-ts-fYN" secondAttribute="centerX" id="sRw-5Y-6fc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5FC-ts-fYN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="52w-6h-6is"/>
+                            <constraint firstItem="5FC-ts-fYN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="F2j-4o-gS8"/>
+                            <constraint firstItem="5FC-ts-fYN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tCX-sY-de2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cryptoSegment" destination="9wP-UP-dLq" id="YWR-ek-HnQ"/>
+                        <outlet property="goButton" destination="78K-Oe-mB5" id="arb-88-eMg"/>
+                        <outlet property="moneySegment" destination="TNf-kI-CQV" id="taR-fk-eMg"/>
+                        <outlet property="switchButton" destination="CBe-TU-6Tz" id="ELe-ot-XSA"/>
+                        <outlet property="textInput" destination="fad-uV-8t1" id="KMe-mO-vYV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33" y="-630"/>
+        </scene>
+        <!--Results Controller-->
+        <scene sceneID="5uk-SX-WdS">
+            <objects>
+                <viewController id="Xuf-Ae-vsD" customClass="ResultsController" customModule="CryptoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Azz-H0-fCs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 BTC is ##### USD" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="WLh-3m-qsh">
+                                <rect key="frame" x="57" y="351" width="300" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="394-Kk-FE6"/>
+                                    <constraint firstAttribute="height" constant="140" id="58B-JB-K1L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riA-Ie-bXw" userLabel="GO Button">
+                                <rect key="frame" x="132" y="758" width="150" height="50"/>
+                                <color key="backgroundColor" name="bgColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0OC-dY-AJA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="5nt-qz-qFy"/>
+                                    <constraint firstAttribute="width" constant="150" id="Lxz-rh-fTA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="RECALCULATE">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="recalculatePressed:" destination="Xuf-Ae-vsD" eventType="touchUpInside" id="GC8-EW-z2s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ENi-LP-Jpe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WLh-3m-qsh" firstAttribute="centerX" secondItem="Azz-H0-fCs" secondAttribute="centerX" id="MLI-0t-L6W"/>
+                            <constraint firstItem="riA-Ie-bXw" firstAttribute="centerX" secondItem="Azz-H0-fCs" secondAttribute="centerX" id="TKc-Ys-RcQ"/>
+                            <constraint firstItem="WLh-3m-qsh" firstAttribute="centerY" secondItem="Azz-H0-fCs" secondAttribute="centerY" id="YhZ-2n-Bc8"/>
+                            <constraint firstItem="riA-Ie-bXw" firstAttribute="bottom" secondItem="ENi-LP-Jpe" secondAttribute="bottom" id="sBH-hy-3wV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="WLh-3m-qsh" id="1re-Kp-E7O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMy-ac-R1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="-630"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.up.arrow.down" catalog="system" width="128" height="98"/>
+        <namedColor name="bgColor">
+            <color red="0.15299999713897705" green="0.15299999713897705" blue="0.15600000321865082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
