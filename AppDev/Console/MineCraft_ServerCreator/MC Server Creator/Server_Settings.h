@@ -1,3 +1,5 @@
+#ifndef SERVERSETTINGS_H
+#define SERVERSETTINGS_H
 //
 //  Server_Settings.h
 //  MC Server Creator
@@ -5,19 +7,29 @@
 //  Created by Mehmet Yusuf Ozen on 9/24/21.
 //
 #include <string>
+#include "fstream"
 using namespace std;
 #pragma once
 
 
 fstream file;
-string serverName = "A minecraft server";
+//create direction
+string homeDir = getenv("HOME");
+string folderDirection = homeDir + "/Desktop";
+void CreateServer();
+//agreement
+bool eulaAgreed = false;
+
+
+//servername
+//string serverName = "A minecraft server";
 //Gamemode: survival, hardcore, creative [survival]
-//If hardcore difficulty will be hard, cheats and bonus chests will be off.
-//If creative cheats default will be on.
-string gameMode = "survival";
+/*If difficulty will be hard, cheats and bonus chests will be off.
+ If creative cheats default will be on.*/
+//string gameMode = "survival";
 //Difficulty: peaceful, easy, normal, hard [normal]
-string defficulty = "normal";
-string allowCheats = "off";
+//string defficulty = "normal";
+//string allowCheats = "off";
 
 
 //broadcast-rcon-to-ops=true
@@ -67,3 +79,4 @@ string allowCheats = "off";
 //enable-status=true
 //allow-flight=false
 //max-world-size=29999984
+#endif
